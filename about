@@ -9,10 +9,10 @@
 </head>
 <body>
   <div class="banner">
-    <a href="index.html" class="nav-bar logo"><b>&lt;/&gt;<b></a>
-    <a href="about.html" class="nav-bar">About</a>
-    <a href="contact.html" class="nav-bar">Contact</a>
-    <a href="services.html" class="nav-bar">Services</a>
+    <a href="/" class="nav-bar logo"><b>&lt;/&gt;<b></a>
+    <a href="about" class="nav-bar">About</a>
+    <a href="contact" class="nav-bar">Contact</a>
+    <a href="services" class="nav-bar">Services</a>
     <br><br>
     <h1>NonZer0 Cybersecurity</h1>
     <p>Research. Training. Consulting.</p>
