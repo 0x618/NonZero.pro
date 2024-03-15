@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <rect style="stroke: rgb(255, 192, 0); fill: rgb(255, 192, 0);" width="500" height="500" rx="50" ry="50" transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, 0, 0)"/>
+  <text style="fill: rgb(51, 51, 51); font-family: Consolas; font-size: 350px; font-weight: 700; letter-spacing: -40px; white-space: pre;" x="-0.775" y="362.289" transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, 0, 0)">&lt;/&gt;</text>
+</svg>
