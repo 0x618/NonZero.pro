@@ -64,6 +64,17 @@ body {
   height: 65dvh;
 }
 
+.card {
+  border: 2px solid #c7c7c7;
+  border-radius: 5px;
+  padding-left: 1rem;
+}
+
+.profile-image {
+  float: left;
+  margin: 1rem 1rem 0 0;
+}
+
 .footer {
   position: relative;
   font-weight: normal;
