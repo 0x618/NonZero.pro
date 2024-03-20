@@ -1,9 +1,14 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
   font-family: Consolas;
   color: #c7c7c7;
   background-color: #1d1d1d;
+  overflow: hidden;
+}
+
+a {
+  color: #ffc000;
 }
 
 .banner {
@@ -61,7 +66,13 @@ body {
 .content {
   font-weight: normal;
   margin: 1.25rem;
-  height: 65dvh;
+}
+
+.card {
+  border: 2px solid #c7c7c7;
+  border-radius: 5px;
+  padding: 0 1rem;
+  height: 70vh;
 }
 
 .terminal {
@@ -85,12 +96,6 @@ body {
   to {
     visibility: hidden;
   }
-}
-
-.card {
-  border: 2px solid #c7c7c7;
-  border-radius: 5px;
-  padding-left: 1rem;
 }
 
 .profile-image {
