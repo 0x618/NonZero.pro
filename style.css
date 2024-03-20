@@ -64,6 +64,29 @@ body {
   height: 65dvh;
 }
 
+.terminal {
+  font-weight: normal;
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.terminal.currentline:after {
+  content: "";
+  width: 0.9rem;
+  height: 1.5rem;
+  background: #ffc000;
+  display: inline-block;
+  animation: cursor-blink 1.5s steps(2, start) infinite;
+}
+
+@keyframes cursor-blink {
+  to {
+    visibility: hidden;
+  }
+}
+
 .card {
   border: 2px solid #c7c7c7;
   border-radius: 5px;

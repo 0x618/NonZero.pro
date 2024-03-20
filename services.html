@@ -6,10 +6,11 @@
   <title>NonZero</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="./favicon-2.3.svg">
+  <script type="text/javascript" src="animations.js"></script>
 </head>
 <body>
   <div class="banner">
-    <a href="/" class="nav-bar logo"><b>&lt;/&gt;<b></a>
+    <a href="/" class="nav-bar logo" onmouseover="logoAnimation('HOME')" onmouseleave="logoReset()"><b>&lt;/&gt;<b></a>
     <a href="about" class="nav-bar">About</a>
     <a href="contact" class="nav-bar">Contact</a>
     <a href="services" class="nav-bar">Services</a>
@@ -17,9 +18,8 @@
     <h1>NonZero Cybersecurity | Michael D. Beck</h1>
     <p>Research. Training. Consulting.</p>
   </div>
-  <div class="content">
-    <h1>Services</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacus dui, sollicitudin id vehicula convallis, congue in felis. Sed ullamcorper quam quam, vel tempor mi porttitor et. Sed commodo justo in massa dictum sodales. Nullam commodo laoreet felis ac convallis. Vestibulum quis magna et diam faucibus gravida vel sed diam. Ut nunc urna, laoreet vitae sollicitudin sit amet, lobortis ut erat. Suspendisse a mollis turpis. Integer lacinia pharetra eros. Pellentesque sit amet orci nulla. Integer tristique quis sem in scelerisque. Curabitur venenatis nibh quis nisi dictum suscipit non et justo. </p>
+  <div class="content card">
+    <h2 class="terminal currentline">guest@nonzero.pro:~/services$&nbsp;</h2>
   </div>
   <div class="footer">
     <p><em>© NonZero, LLC</em> <b>|</b> <em>Michael D. Beck</em> <b>|</b> <em><script>document.write(new Date().getFullYear());</script></em></p>
