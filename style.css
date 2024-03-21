@@ -4,7 +4,6 @@ html, body {
   font-family: Consolas;
   color: #c7c7c7;
   background-color: #1d1d1d;
-  overflow: hidden;
 }
 
 a {
@@ -66,13 +65,15 @@ a {
 .content {
   font-weight: normal;
   margin: 1.25rem;
+  overflow: auto;
 }
 
 .card {
   border: 2px solid #c7c7c7;
   border-radius: 5px;
   padding: 0 1rem;
-  height: 70vh;
+  height: 65vh;
+  position:relative;
 }
 
 .terminal {
@@ -110,4 +111,27 @@ a {
   width: 100%;
   left: 0;
   bottom: 0;
+}
+
+.mobile-show {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-expand {
+    height: 100%;
+  }
+  .mobile-button {
+    color:#ffc000;
+    background-color: #1d1d1d;
+  }
+  .mobile-hide {
+    display: none;
+  }
+  .mobile-show {
+    display: inline;
+  }
+  .mobile-profile-image {
+    margin:  1.5rem 1rem 0 0;
+  }
 }

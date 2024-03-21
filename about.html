@@ -13,34 +13,37 @@
 <body>
   <div class="banner">
     <a href="/" class="nav-bar logo" onmouseover="logoAnimation('HOME')" onmouseleave="logoReset()">&lt;/&gt;</a>
-    <a href="about" class="nav-bar">About</a>
-    <a href="contact" class="nav-bar">Contact</a>
-    <a href="services" class="nav-bar">Services</a>
+    <a href="about" class="nav-bar mobile-button">About</a>
+    <a href="contact" class="nav-bar mobile-hide">Contact</a>
+    <a href="services" class="nav-bar mobile-hide">Services</a>
     <br><br>
-    <h1>NonZero Cybersecurity | Michael D. Beck</h1>
+    <h1>NonZero Cybersecurity | Michael Beck</h1>
     <p><b>Research. Training. Consulting.</b></p>
   </div>
-  <div class="content card" onclick="terminalAnimation('whoami')">
-    <h2 class="terminal currentline">guest@nonzero:~/about$&nbsp;</h2>
-      <a href="https://www.linkedin.com/in/michael-beck-073107189/" target="_blank"><img class="profile-image"
-          src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
-          alt="NonZero Logo" width="50rem" height="50rem"></a>
-      <h3 style="margin-bottom: 0">Michael Beck</h3>
-      <p style="margin-top: 0">Penetration Tester | Instructor</p>
-      <p>Michael Beck is an experienced Senior Penetration Tester with a passion for offensive security, reverse
-        engineering, and development. He has spent the past three years working as a penetration tester, providing
-        high-touch consulting services to companies within a wide range of industries: finance, healthcare, government,
-        defense, and everything in between. Prior to his pentesting career, he worked primarily in cybersecurity
-        research,
-        both in the defense industry and at North Dakota State University.</p>
-      <p>Aside from penetration testing, Michael leads live OSCP trainings as an OffSec authorized instructor. His next
-        class is <a href="https://www.blackhat.com/us-24/training/schedule/#penetration-testing-with-kali-linux-38383" target="_blank">Penetration
+  <div class="content card mobile-expand" onclick="terminalAnimation('whoami')">
+    <h2 class="terminal currentline mobile-hide">guest@nonzero:~/about$&nbsp;</h2>
+    <a href="https://www.linkedin.com/in/michael-beck-073107189/" target="_blank"><img class="profile-image mobile-profile-image"
+        src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
+        alt="LinkedIn Logo" width="50rem" height="50rem"></a>
+    <h3 style="margin-bottom: 0">Michael Beck</h3>
+    <p style="margin-top: 0">Penetration Tester | Instructor</p>
+    <p>Michael Beck is an experienced Senior Penetration Tester with a passion for offensive security, reverse
+      engineering, and development. He has spent the past three years working as a penetration tester, providing
+      high-touch consulting services to companies within a wide range of industries: finance, healthcare, government,
+      defense, and everything in between. Prior to his pentesting career, he worked primarily in cybersecurity
+      research,
+      both in the defense industry and at North Dakota State University.</p>
+    <p>Aside from penetration testing, Michael leads live OSCP trainings as an OffSec authorized instructor. His next
+      class is <a href="https://www.blackhat.com/us-24/training/schedule/#penetration-testing-with-kali-linux-38383"
+        target="_blank">Penetration
         Testing with Kali Linux</a>, which will be held in-person at BlackHat USA 2024 in partnership with OffSec and
-        Applied Technology Academy.</p>
-      <p>For full details on Michael's credentials and experience, see his <a href="https://www.linkedin.com/in/michael-beck-073107189/" target="_blank">LinkedIn</a> profile.</p>
+      Applied Technology Academy.</p>
+    <p>For full details on Michael's credentials and experience, see his <a
+        href="https://www.linkedin.com/in/michael-beck-073107189/" target="_blank">LinkedIn</a> profile.</p>
+    <br>
   </div>
   <div class="footer">
-    <p><em>© NonZero, LLC</em> <b>|</b> <em>Michael D. Beck</em> <b>|</b> <em>
+    <p><em>© NonZero, LLC </em><span class="mobile-hide"><b>|</b> <em>Michael Beck</em> </span><b>|</b> <em>
         <script>document.write(new Date().getFullYear());</script>
       </em></p>
   </div>
