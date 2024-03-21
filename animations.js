@@ -21,7 +21,7 @@ function logoReset(text) {
         e.target.innerHTML = '&lt;/&gt;';
     }, 500, event);
 }
-function terminalAnimation(text) {
+async function terminalAnimation(text) {
     if (!termFired) {
         termFired = true;
         term = document.getElementsByClassName('terminal')[0];
@@ -33,4 +33,5 @@ function terminalAnimation(text) {
             }, i * 75, term);
         }
     }
+    return new Promise(resolve => setTimeout(resolve, (text.length * 100 + 2500)));
 }

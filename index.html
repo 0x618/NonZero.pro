@@ -13,14 +13,14 @@
 <body>
   <div class="banner">
     <a href="/" class="nav-bar logo" onmouseover="logoAnimation('HOME')" onmouseleave="logoReset()">&lt;/&gt;</a>
-    <a href="about" class="nav-bar">About</a>
-    <a href="contact" class="nav-bar">Contact</a>
-    <a href="services" class="nav-bar">Services</a>
+    <a href="about" class="nav-bar mobile-button">About</a>
+    <a href="contact" class="nav-bar mobile-hide">Contact</a>
+    <a href="services" class="nav-bar mobile-hide">Services</a>
     <br><br>
     <h1>NonZero Cybersecurity | Michael Beck</h1>
     <p><b>Research. Training. Consulting.</b></p>
   </div>
-  <div class="content card" onclick="terminalAnimation('Coming soon...')">
+  <div class="content card" onclick="terminalAnimation('Loading...').then(() => {window.location='about'})">
     <h2 class="terminal currentline">guest@nonzero:~$&nbsp;</h2>
   </div>
   <div class="footer">
