@@ -68,6 +68,8 @@ a {
 
 .content {
   font-weight: normal;
+  font-family: monospace;
+  font-size: 18px;
   margin: 1.25rem;
   overflow: auto;
 }
@@ -83,6 +85,7 @@ a {
 .terminal {
   font-weight: normal;
   font-family: monospace;
+  font-size: 18px;
   display: flex;
   align-items: center;
   gap: 2px;
@@ -93,7 +96,6 @@ a {
   width: 0.9rem;
   height: 1.5rem;
   background: #ffc000;
-  display: inline-block;
   animation: cursor-blink 1.5s steps(2, start) infinite;
 }
 
