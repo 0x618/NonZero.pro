@@ -34,7 +34,6 @@ a {
 
 .nav-bar {
   float: right;
-  font-weight: 400;
   font-family: monospace;
   top: 10px;
   right: 10px;
@@ -50,6 +49,7 @@ a {
 
 .nav-bar.logo {
   float: left;
+  font-weight: 500;
   color:#ffc000;
   background-color: #1d1d1d;
   border: none;
@@ -126,6 +126,7 @@ a {
     height: 100%;
   }
   .mobile-button {
+    font-weight: 500;
     color:#ffc000;
     background-color: #1d1d1d;
   }
