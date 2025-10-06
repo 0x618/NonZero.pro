@@ -5,6 +5,8 @@ html, body {
   font-weight: 700;
   color: #c7c7c7;
   background-color: #1d1d1d;
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+
 }
 
 a {
