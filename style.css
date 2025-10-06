@@ -11,6 +11,10 @@ a {
   color: #ffc000;
 }
 
+.hidden {
+  display: none
+}
+
 .banner {
   background-color: #ffc000;
   color: #1d1d1d;

@@ -7,7 +7,8 @@
   <title>About</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon-2.3.svg">
   <script type="text/javascript" src="animations.js"></script>
@@ -23,24 +24,31 @@
     <h1>NonZero Cybersecurity | Michael Beck</h1>
     <p>Research. Training. Consulting.</p>
   </div>
-  <div class="content card mobile-expand" onclick="terminalAnimation('whoami')">
-    <p class="terminal currentline mobile-hide">guest@nonzero:~/about$&nbsp;</p>
-    <a href="https://www.linkedin.com/in/michael-beck-073107189/" target="_blank"><img class="profile-image mobile-profile-image"
-        src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
-        alt="LinkedIn Logo" width="50rem" height="50rem"></a>
-    <h3 style="margin-bottom: 0">Michael Beck</h3>
-    <p style="margin-top: 0">Penetration Tester | Instructor</p>
-    <p>Michael Beck is an experienced Cybersecurity Consultant with a passion for offensive security, reverse
-      engineering, and development. He has worked primarily as a penetration tester, providing
-      high-touch consulting services to companies within a wide range of industries: finance, healthcare, government,
-      defense, and everything in between. Prior to his pentesting career, he worked primarily in cybersecurity
-      research, both in the defense industry and at North Dakota State University.</p>
-    <p>Aside from penetration testing, Michael has lead live OSCP trainings as an OffSec authorized instructor. Most recently, he taught <a href="https://www.blackhat.com/us-24/training/schedule/#penetration-testing-with-kali-linux-38383"
-        target="_blank">Penetration
-        Testing with Kali Linux</a> at BlackHat USA 2024 in partnership with OffSec and Applied Technology Academy.</p>
-    <p>For full details on Michael's credentials and experience, see his <a
-        href="https://www.linkedin.com/in/michael-beck-073107189/" target="_blank">LinkedIn</a> profile.</p>
-    <br>
+  <div class="content card mobile-expand" onclick="terminalAnimation('whoami').then(() => {document.getElementById('termtext00').setAttribute('class','terminal mobile-hide');document.getElementById('termtext01').setAttribute('class','');document.getElementById('termtext02').setAttribute('class','terminal currentline')})">
+    <p id="termtext00" class="terminal currentline">guest@nonzero:~/about$&nbsp;</p>
+    <div id="termtext01" class="hidden">
+      <a href="https://www.linkedin.com/in/michael-beck-073107189/" target="_blank"><img
+          class="profile-image mobile-profile-image"
+          src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
+          alt="LinkedIn Logo" width="50rem" height="50rem"></a>
+      <h3 style="margin-bottom: 0">Michael Beck</h3>
+      <p style="margin-top: 0">Penetration Tester | Instructor</p>
+      <p>Michael Beck is an experienced Cybersecurity Consultant with a passion for offensive security, reverse
+        engineering, and development. He has worked primarily as a penetration tester, providing
+        high-touch consulting services to companies within a wide range of industries: finance, healthcare, government,
+        defense, and everything in between. Prior to his pentesting career, he worked primarily in cybersecurity
+        research, both in the defense industry and at North Dakota State University.</p>
+      <p>Aside from penetration testing, Michael has lead live OSCP trainings as an OffSec authorized instructor. Most
+        recently, he taught <a
+          href="https://www.blackhat.com/us-24/training/schedule/#penetration-testing-with-kali-linux-38383"
+          target="_blank">Penetration
+          Testing with Kali Linux</a> at BlackHat USA 2024 in partnership with OffSec and Applied Technology Academy.
+      </p>
+      <p>For full details on Michael's credentials and experience, see his <a
+          href="https://www.linkedin.com/in/michael-beck-073107189/" target="_blank">LinkedIn</a> profile.</p>
+      <br>
+      <p id="termtext02" class="terminal currentline">guest@nonzero:~/about$&nbsp;</p>
+    </div>
   </div>
   <div class="footer">
     <p><em>© NonZero, LLC </em><span class="mobile-hide"><b>|</b> <em>Michael Beck</em> </span><b>|</b> <em>

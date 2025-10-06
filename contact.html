@@ -7,7 +7,8 @@
   <title>Contact</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon-2.3.svg">
   <script type="text/javascript" src="animations.js"></script>
@@ -23,8 +24,14 @@
     <h1>NonZero Cybersecurity | Michael Beck</h1>
     <p>Research. Training. Consulting.</p>
   </div>
-  <div class="content card" onclick="terminalAnimation('Coming soon...')">
-    <p class="terminal currentline">guest@nonzero:~/contact$&nbsp;</p>
+  <div class="content card mobile-expand"
+    onclick="terminalAnimation('./contact').then(() => {document.getElementById('termtext00').setAttribute('class','terminal');document.getElementById('termtext01').setAttribute('class','terminal');document.getElementById('termtext02').setAttribute('class','terminal currentline')})">
+    <p id="termtext00" class="terminal currentline">guest@nonzero:~/contact$&nbsp;</p>
+    <div id="termtext01" class="hidden">
+      <p>Looking to get in touch? Connect with me on&nbsp;<a
+          href="https://www.linkedin.com/in/michael-beck-073107189/">LinkedIn</a></p>
+    </div>
+    <p id="termtext02" class="hidden">guest@nonzero:~/contact$&nbsp;</p>
   </div>
   <div class="footer">
     <p><em>© NonZero, LLC </em><span class="mobile-hide"><b>|</b> <em>Michael Beck</em> </span><b>|</b> <em>

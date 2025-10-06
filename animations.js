@@ -24,14 +24,24 @@ function logoReset(text) {
 async function terminalAnimation(text) {
     if (!termFired) {
         termFired = true;
-        term = document.getElementsByClassName('terminal')[0];
-        prefix = term.innerHTML;
-        for (let i = 0; i < text.length; i++) {
-            setTimeout((term) => {
-                prefix += text[i];
-                term.innerHTML = prefix;
-            }, i * 75, term);
-        }
+        const term = document.getElementsByClassName('terminal')[0];
+        let prefix = term.innerHTML;
+
+        // Return a promise that resolves when the last timeout runs
+        return new Promise(resolve => {
+            for (let i = 0; i < text.length; i++) {
+                setTimeout(() => {
+                    prefix += text[i];
+                    term.innerHTML = prefix;
+                    // resolve when the final character has been written, after 75ms delay
+                    if (i === text.length - 1) {
+                        setTimeout(resolve, 500);
+                    }
+                }, i * 75);
+            }
+        });
     }
-    return new Promise(resolve => setTimeout(resolve, (text.length * 100 + 2500)));
+
+    // If the animation already fired, resolve immediately
+    return Promise.resolve();
 }
